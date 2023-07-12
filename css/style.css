@@ -14,7 +14,13 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --beige: beige;
+    --beige: #DDD0C3;
+    --beige-1: #D6CCC2;
+    --mustard: #A07B50;
+    --bg-black: #181617;
+    --bg-dark-brown: #1F1C1D;
+    --text-30: rgba(0, 0, 0, 0.3);
+    --border-brown: #544332;
 }
 
 /* Базовые стили */
@@ -22,15 +28,15 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 360px;
+    min-width: 320px;
     min-height: 100vh;
-    font-family: "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
+    line-height: 140%;
+    font-weight: 300;
     font-style: normal;
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--bg-dark-brown);
 }
 
 /* Чтобы в элементах форм использовался тот же шрифт, что и у основного текста */
@@ -93,14 +99,14 @@ button {
 /* Сеточные стили. Примеры медиа-запросов для вёрстки mobile-first */
 
 .container {
-    min-width: 360px;
+    min-width: 320px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 @media (min-width: 768px) {
     .container {
-      padding: 0 40px;
+      padding: 0 30px;
     }
 }
 
@@ -113,6 +119,89 @@ button {
 /* Стили для хедера */
 
 /* Стили для основного содержания */
+
+/* promo */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 27px;
+    padding-bottom: 57px;
+}
+
+.promo ,
+ .page{
+    background-color: var(--black);
+}
+
+.promo__subtitle {
+    padding-top: 79px;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--mustard);
+    text-align: center;
+}
+
+.promo__title {
+    padding-top: 30px;
+    padding-bottom: 29px;
+    font-size: 36px;
+    font-family: "Yeseva One";
+    line-height: 42px;
+    text-align: center;
+    color: var(--white);
+    font-weight: 400;
+
+}
+
+.promo__text {
+    padding-bottom: 40px;
+    font-family: "Roboto";
+    line-height: 140%;
+    text-align: center;
+    color: var(--mustard);
+}
+
+.button {
+    border: var(--mustard) 1px;
+}
+
+.pets {
+    background-color: var(--bg-dark-brown);
+}
+
+.pets__title {
+    padding-top: 60px;
+    padding-bottom: 33px;
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Yaseva One";
+    font-weight: 400;
+    text-align: center;
+}
+
+.pets__text {
+    padding-bottom: 39px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--mustard);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Стили для футера */
 
